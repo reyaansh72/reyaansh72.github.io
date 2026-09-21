@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+.theme-selector {
+    margin-top: 1rem;
+}
+
+.theme-selector label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.theme-selector select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.intro, .skills, .projects {
+    margin-bottom: 4rem;
+}
+
+.intro h2, .skills h2, .projects h2 {
+    margin-bottom: 1rem;
+}
+
+.skills ul, .projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li, .projects li {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+}
+
+.skills li:hover, .projects li:hover {
+    background-color: #e0e0e0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Material Design theme switching */
+body.light {
+    background-color: #f4f4f4;
+}
+
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark a {
+    color: #ccc;
+}
