@@ -1,28 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease;
+    color: #333;
 }
 
 .header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-h1, h2 {
-    color: #fff;
+.header h1 {
+    margin-bottom: 0;
 }
 
 .theme-selector {
     margin-top: 1rem;
+    float: right;
 }
 
 .theme-selector label {
@@ -33,10 +34,14 @@ h1, h2 {
 .theme-selector select {
     padding: 0.5rem;
     font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .main {
     padding: 2rem;
+    margin-top: 60px; /* Adjust based on header height */
 }
 
 .intro, .skills, .projects {
@@ -60,6 +65,7 @@ h1, h2 {
     border-radius: 4px;
     color: #333;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .skills li:hover, .projects li:hover {
@@ -67,13 +73,14 @@ h1, h2 {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #4CAF50;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Material Design theme switching */
@@ -88,4 +95,29 @@ body.dark {
 
 body.dark a {
     color: #ccc;
+}
+
+/* Additional styling for better look */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
